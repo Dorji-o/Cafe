@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Home Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="scroll-button">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+    
+     <nav>
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;"><h1>DC HOME BASICS</h1></a>
+        </div>
+    
+            
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/light.png" alt=""></a></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Products</a>
+                            <div class="dropdown-content">
+                                <a href="#" style="font-size: 18px;">Furniture</a>
+                                <a href="#" style="font-size: 18px;">Decor</a>
+                                <a href="#" style="font-size: 18px;">Appliances</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                </ul>
+                
+                <div class="media-icons">
+                    <a href="#"><i class='bx bxl-facebook' style="color: black;"></i></a>
+                    <a href="#"><i class='bx bxl-instagram' style="color: black;"></i></a>
+                    <a href="#"><i class='bx bxl-twitter' style="color: black;"></i></a>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+
+    <section class="hero">
+       
+        <div class="item">
+            <h2 class="moving-text" >"Style your space, Define your sanctuary: DC Home Basics"</h2>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+        
+    </section>
+
+    <section class="contain">
+        <div class="text">
+            <h4>Modern Home Decor Essentials</h4>
+            <p>Modern minimals decors available with most reasonable price</p>
+        </div>
+        
+        <div class="essential">
+            <div class="card">
+                <img src="img/3.jpg" alt="Product 1">
+                <div class="card-content">
+                    <h3>Vanilla Fragrance</h3>
+                    <p>Nu.1200</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/6.jpg" alt="Product 1">
+                <div class="card-content">
+                    <h3>Scented Candles</h3>
+                    <p>NU.1200</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/4.jpg" alt="Product 1">
+                <div class="card-content">
+                    <h3>Olive Fragrance</h3>
+                    <p>Nu.699</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/7.jpg" alt="Product 1">
+                <div class="card-content">
+                    <h3>Round Ikea Table</h3>
+                    <p>NU.5999</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            </div>
+    
+
+        </div>
+        
+    </section>
+    <section class="form-section">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+            <button type="submit" class="pink-button">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+
+    // Form validation
+    if (!name || !email) {
+        alert('Please fill in all fields.');
+        return; // Exit the function if validation fails
+    }
+
+    // If the form is valid, you can submit it or perform other actions here
+    alert('Form submitted successfully!');
+});
+
+    </script>
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>CST<br>Phuntsholing, Bhutan</p>
+                <p>Email: dorjiwangmo645@gmail.com<br>Phone: 17336164</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+               
+                <h4>Subscribe to Our Newsletter</h4>
+                <form id="subscribeForm">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button type="button" class="flat-button" onclick="validateEmail()">Subscribe</button>
+                    <p id="errorMessage" style="color: red;"></p>
+                </form>
+                
+            <script>
+                function validateEmail() {
+    var emailInput = document.getElementById('email').value;
+    var errorMessage = document.getElementById('errorMessage');
+
+    // Check if email input is empty
+    if (emailInput.trim() === '') {
+        errorMessage.textContent = 'Please enter your email address.';
+        return;
+    }
+
+    // Check if email is valid (assuming you have this function implemented)
+    if (!isValidEmail(emailInput)) {
+        errorMessage.textContent = 'Please enter a valid email address.';
+        return;
+    }
+
+    // If validation passes, you can proceed with form submission or other actions
+    // For demonstration purposes, I'll just display a success message
+    errorMessage.textContent = 'Subscription successful!';
+}
+
+            </script> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Dorji. All Rights Reserved.</p>
+        </div>
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">&#10148;</button>
+    </footer>
+    
+    
+    
+</body>
+</html>
